@@ -12,6 +12,8 @@ body {
     background-image: linear-gradient(135deg, #252525, #030303);
 }
 .main {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 35px 80px 80px;

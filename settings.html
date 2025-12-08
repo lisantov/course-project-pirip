@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>AFin - Ваш личный учёт финансов</title>
+  <link rel="stylesheet" href="static/styles/fonts.css">
+  <link rel="stylesheet" href="static/styles/index.css">
+  <link rel="stylesheet" href="static/styles/blocks/settings-page.css">
+</head>
+<body>
+<header class="header">
+  <a class="header__logo" href="index.html">
+    <img class="header__logo-icon" src="static/icons/logo.svg" alt="Логотип компнаии">
+  </a>
+  <nav class="header__nav">
+    <a class="header__nav-link" href="index.html">Главная</a>
+    <a class="header__nav-link" href="calendar.html">Календарь</a>
+    <a class="header__nav-link" href="report.html">Отчёты</a>
+    <a class="header__nav-link header__nav-link--active" href="#">Настройки</a>
+  </nav>
+  <div class="header__user">
+    <a class="header__nav-link" href="#">Профиль</a>
+    <a class="header__nav-link" href="#">Выход</a>
+  </div>
+</header>
+<main class="main">
+  <section class="settings">
+    <div class="settings__header">
+      <h1 class="settings__title">Сводка</h1>
+      <div class="settings__separator"></div>
+    </div>
+    <div class="settings__content">
+      <article class="settings__option">
+        <h2 class="settings__option-title">Оформление</h2>
+        <ul class="settings__option-grid">
+          <li class="settings__option-item">
+            <label class="settings__option-label">
+              Тема оформления:
+              <select name="theme" class="settings__option-input">
+                <option value="Тёмная" class="settings__option-variant">Тёмная</option>
+                <option value="Светлая" class="settings__option-variant">Светлая</option>
+                <option value="Системная" class="settings__option-variant">Системная</option>
+              </select>
+            </label>
+          </li>
+          <li class="settings__option-item">
+            <label class="settings__option-label">
+              Размер шрифта:
+              <select name="font-size" class="settings__option-input">
+                <option value="Средний" class="settings__option-variant">Средний</option>
+                <option value="Маленький" class="settings__option-variant">Маленький</option>
+                <option value="Большой" class="settings__option-variant">Большой</option>
+              </select>
+            </label>
+          </li>
+        </ul>
+      </article>
+      <article class="settings__option">
+        <h2 class="settings__option-title">Валюта</h2>
+        <ul class="settings__option-grid">
+          <li class="settings__option-item">
+            <label class="settings__option-label">
+              По-умполчанию:
+              <select name="default-value" class="settings__option-input">
+                <option value="Рубль" class="settings__option-variant">&#8381; - Рубль (Ru)</option>
+                <option value="Доллар" class="settings__option-variant">&dollar; - Доллар (Us)</option>
+                <option value="Евро" class="settings__option-variant">&euro; - Евро (Eu)</option>
+              </select>
+            </label>
+          </li>
+          <li class="settings__option-item">
+            <label class="settings__option-label">
+              Валюта в сводке:
+              <select name="summary-value" class="settings__option-input">
+                <option value="По-умолчанию" class="settings__option-variant">По-умолчанию</option>
+                <option value="Рубль" class="settings__option-variant">&#8381; - Рубль (Ru)</option>
+                <option value="Доллар" class="settings__option-variant">&dollar; - Доллар (Us)</option>
+                <option value="Евро" class="settings__option-variant">&euro; - Евро (Eu)</option>
+              </select>
+            </label>
+          </li>
+          <li class="settings__option-item">
+            <label class="settings__option-label">
+              Валюта в отчётах:
+              <select name="summary-value" class="settings__option-input">
+                <option value="По-умолчанию" class="settings__option-variant">По-умолчанию</option>
+                <option value="Рубль" class="settings__option-variant">&#8381; - Рубль (Ru)</option>
+                <option value="Доллар" class="settings__option-variant">&dollar; - Доллар (Us)</option>
+                <option value="Евро" class="settings__option-variant">&euro; - Евро (Eu)</option>
+              </select>
+            </label>
+          </li>
+          <li class="settings__option-item">
+            <label class="settings__option-label">
+              Валюта в графиках:
+              <select name="summary-value" class="settings__option-input">
+                <option value="По-умолчанию" class="settings__option-variant">По-умолчанию</option>
+                <option value="Рубль" class="settings__option-variant">&#8381; - Рубль (Ru)</option>
+                <option value="Доллар" class="settings__option-variant">&dollar; - Доллар (Us)</option>
+                <option value="Евро" class="settings__option-variant">&euro; - Евро (Eu)</option>
+              </select>
+            </label>
+          </li>
+        </ul>
+      </article>
+      <article class="settings__option">
+        <h2 class="settings__option-title">Профиль</h2>
+        <ul class="settings__option-grid">
+          <li class="settings__option-item">
+            <label class="settings__option-label">
+              Имя пользователя:
+              <input value="Никита" type="text" class="settings__option-input" placeholder="Имя пользователя">
+            </label>
+          </li>
+          <li class="settings__option-item">
+            <label class="settings__option-label">
+              Электронная почта:
+              <input value="lisantov@yandex.ru" type="email" class="settings__option-input" placeholder="Email пользователя">
+            </label>
+          </li>
+        </ul>
+      </article>
+      <article class="settings__buttons">
+        <button class="settings__button">Удалить профиль</button>
+      </article>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer__logo">
+    <img src="static/icons/logo.svg" alt="Иконка AFin">
+    <span class="footer__logo-company">&copy;AFinance 2025</span>
+  </div>
+  <nav class="footer__nav">
+    <a class="footer__nav-link" href="">FAQ</a>
+    <a class="footer__nav-link" href="">Политика конфиденциальности</a>
+    <a class="footer__nav-link" href="">Пользовательское соглашение</a>
+    <a class="footer__nav-link" href="">О проекте</a>
+    <a class="footer__nav-link" href="">Наша команда</a>
+    <a class="footer__nav-link" href="">Для спонсоров</a>
+  </nav>
+  <div class="footer__socials">
+    <a class="footer__socials-link" href="">
+      <img src="static/icons/telegram.svg" alt="Иконка телеграмма">
+    </a>
+    <a class="footer__socials-link" href="">
+      <img src="static/icons/max.svg" alt="Иконка мессенджера макс">
+    </a>
+    <a class="footer__socials-link" href="">
+      <img src="static/icons/vk.svg" alt="Иконка вконтакте">
+    </a>
+  </div>
+</footer>
+</body>
+</html>

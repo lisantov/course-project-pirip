@@ -19,5 +19,9 @@
     --background-hover: #333333;
     --background-active: #444444;
 
+    --button-background: #333333;
+    --button-background-hover: #202020;
+    --button-background-active: #030303;
+
     --shadow-primary: #161616;
 }
