@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>AFin - Ваш личный учёт финансов</title>
+    <link rel="stylesheet" href="static/styles/fonts.css">
+    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="stylesheet" href="static/styles/blocks/report-page.css">
+</head>
+<body>
+<header class="header">
+    <a class="header__logo" href="index.html">
+        <img class="header__logo-icon" src="static/icons/logo.svg" alt="Логотип компнаии">
+    </a>
+    <nav class="header__nav">
+        <a class="header__nav-link" href="index.html">Главная</a>
+        <a class="header__nav-link" href="calendar.html">Календарь</a>
+        <a class="header__nav-link header__nav-link--active" href="#">Отчёты</a>
+        <a class="header__nav-link" href="#">Настройки</a>
+    </nav>
+    <div class="header__user">
+        <a class="header__nav-link" href="#">Профиль</a>
+        <a class="header__nav-link" href="#">Выход</a>
+    </div>
+</header>
+<main class="main">
+    <section class="report">
+        <div class="report__header">
+            <h1 class="report__title">Сводка</h1>
+            <div class="report__separator"></div>
+            <p class="report__period">01.09.2025 - 01.10.2025</p>
+        </div>
+        <div class="report__content">
+            <div class="report__info">
+                <article class="report__income">
+                    <div class="report__income-card">
+                        <p class="report__income-text">Доход за период</p>
+                        <span class="report__income-amount">+15 670 RUB</span>
+                    </div>
+                    <div class="report__income-percentage">
+                        <div class="report__income-frame">
+                            <div class="report__income-icon">
+                                <img src="static/icons/period.svg" alt="Иконка таймера">
+                            </div>
+                            <div class="report__income-info">
+                                <span class="report__income-percent">+15,67%</span>
+                                <p class="report__income-period">за период</p>
+                            </div>
+                        </div>
+                        <div class="report__income-frame">
+                            <div class="report__income-icon">
+                                <img src="static/icons/chart.svg" alt="Иконка графика">
+                            </div>
+                            <div class="report__income-info">
+                                <span class="report__income-percent">+1,56%</span>
+                                <p class="report__income-period">за год</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="report__roadmap">
+                    <h2 class="report__roadmap-title">Изменение активов за период </h2>
+                    <div class="report__roadmap-chart">
+                        <div class="report__roadmap-edges">
+                            <div class="report__roadmap-edge report__roadmap-edge--left">
+                                <span class="report__roadmap-balance">
+                                    100 000,0
+                                </span>
+                                <p class="report__roadmap-text">начало периода</p>
+                            </div>
+                            <div class="report__roadmap-edge report__roadmap-edge--right">
+                                <span class="report__roadmap-balance">
+                                    115 670,0
+                                </span>
+                                <p class="report__roadmap-text">конец периода</p>
+                            </div>
+                        </div>
+                        <div class="report__roadmap-block">
+                            <div class="report__roadmap-point"></div>
+                            <div class="report__roadmap-point"></div>
+                            <div class="report__roadmap-point"></div>
+                            <div class="report__roadmap-point"></div>
+                            <div class="report__roadmap-point"></div>
+                            <div class="report__roadmap-point"></div>
+                        </div>
+                        <div class="report__roadmap-grid">
+                            <div class="report__roadmap-edge">
+                                <span class="report__roadmap-balance">
+                                    26 670,0
+                                </span>
+                                <p class="report__roadmap-text">поступления</p>
+                            </div>
+                            <div class="report__roadmap-edge">
+                                <span class="report__roadmap-balance">
+                                    13 500,0
+                                </span>
+                                <p class="report__roadmap-text">выводы</p>
+                            </div>
+                            <div class="report__roadmap-edge">
+                                <span class="report__roadmap-balance">
+                                    2 500,0
+                                </span>
+                                <p class="report__roadmap-text">дивиденды</p>
+                            </div>
+                            <div class="report__roadmap-edge">
+                                <span class="report__roadmap-balance">
+                                    0,0
+                                </span>
+                                <p class="report__roadmap-text">налоги</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="report__chart">
+                    <h2 class="report__chart-title">График финансов</h2>
+                    <div class="report__chart-block">
+                        <div class="report__chart-verticals">
+                            <p class="report__chart-vertical">120 000</p>
+                            <p class="report__chart-vertical">115 000</p>
+                            <p class="report__chart-vertical">110 000</p>
+                            <p class="report__chart-vertical">105 000</p>
+                            <p class="report__chart-vertical">100 000</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="report__diagrams">
+                <article class="report__diagram">
+                    <h2 class="report__diagram-title">Диаграмма доходов</h2>
+                    <div class="report__diagram-block">
+                        <div class="report__diagram-position">
+                            <span class="report__diagram-origin">Зарплата</span>
+                            <p class="report__diagram-value">50%</p>
+                        </div>
+                        <div class="report__diagram-position">
+                            <span class="report__diagram-origin">Пособия</span>
+                            <p class="report__diagram-value">5%</p>
+                        </div>
+                        <div class="report__diagram-position">
+                            <span class="report__diagram-origin">Стипендия</span>
+                            <p class="report__diagram-value">12.5%</p>
+                        </div>
+                        <div class="report__diagram-position">
+                            <span class="report__diagram-origin">Дивиденды</span>
+                            <p class="report__diagram-value">25%</p>
+                        </div>
+                        <div class="report__diagram-position">
+                            <span class="report__diagram-origin">Переводы</span>
+                            <p class="report__diagram-value">7.5%</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="report__diagram">
+                    <h2 class="report__diagram-title">Диаграмма расходов</h2>
+                    <div class="report__diagram-block">
+                        <div class="report__diagram-position">
+                            <span class="report__diagram-origin">Зарплата</span>
+                            <p class="report__diagram-value">50%</p>
+                        </div>
+                        <div class="report__diagram-position">
+                            <span class="report__diagram-origin">Пособия</span>
+                            <p class="report__diagram-value">5%</p>
+                        </div>
+                        <div class="report__diagram-position">
+                            <span class="report__diagram-origin">Стипендия</span>
+                            <p class="report__diagram-value">12.5%</p>
+                        </div>
+                        <div class="report__diagram-position">
+                            <span class="report__diagram-origin">Дивиденды</span>
+                            <p class="report__diagram-value">25%</p>
+                        </div>
+                        <div class="report__diagram-position">
+                            <span class="report__diagram-origin">Переводы</span>
+                            <p class="report__diagram-value">7.5%</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__logo">
+        <img src="static/icons/logo.svg" alt="Иконка AFin">
+        <span class="footer__logo-company">&copy;AFinance 2025</span>
+    </div>
+    <nav class="footer__nav">
+        <a class="footer__nav-link" href="">FAQ</a>
+        <a class="footer__nav-link" href="">Политика конфиденциальности</a>
+        <a class="footer__nav-link" href="">Пользовательское соглашение</a>
+        <a class="footer__nav-link" href="">О проекте</a>
+        <a class="footer__nav-link" href="">Наша команда</a>
+        <a class="footer__nav-link" href="">Для спонсоров</a>
+    </nav>
+    <div class="footer__socials">
+        <a class="footer__socials-link" href="">
+            <img src="static/icons/telegram.svg" alt="Иконка телеграмма">
+        </a>
+        <a class="footer__socials-link" href="">
+            <img src="static/icons/max.svg" alt="Иконка мессенджера макс">
+        </a>
+        <a class="footer__socials-link" href="">
+            <img src="static/icons/vk.svg" alt="Иконка вконтакте">
+        </a>
+    </div>
+</footer>
+</body>
+</html>

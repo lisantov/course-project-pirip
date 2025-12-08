@@ -1,0 +1,308 @@
+.report {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.report__header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0 40px;
+}
+
+.report__title {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.report__separator {
+    margin-top: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-primary);
+}
+
+.report__period {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--text-primary);
+}
+
+.report__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.report__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.report__income {
+    display: flex;
+    gap: 40px;
+}
+
+.report__income-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    border-radius: 25px;
+    background-image: url("../../../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.report__income-text {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--text-primary);
+}
+
+.report__income-amount {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.report__income-percentage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.report__income-frame {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.report__income-icon {
+    width: 100px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    border-radius: 25px;
+    border: 1px solid var(--border-primary);
+    object-position: center;
+}
+
+.report__income-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.report__income-percent {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.report__income-period {
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: var(--text-primary);
+}
+
+.report__roadmap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.report__roadmap-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.report__roadmap-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.report__roadmap-edges {
+    display: flex;
+    justify-content: space-between;
+}
+
+.report__roadmap-edge {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.report__roadmap-edge--left {
+    align-items: flex-start;
+}
+
+.report__roadmap-edge--right {
+    align-items: flex-end;
+}
+
+.report__roadmap-balance {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.report__roadmap-text {
+    font-size: 0.75rem;
+    font-weight: 200;
+    color: var(--text-primary);
+}
+
+.report__roadmap-block {
+    height: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--border-primary);
+}
+
+.report__roadmap-point {
+    width: 16px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: var(--text-primary);
+    box-shadow: 0 0 12px 8px var(--shadow-primary);
+}
+
+.report__roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 82px;
+}
+
+.report__chart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.report__chart-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.report__chart-block {
+    display: flex;
+    border: 2px solid var(--border-primary);
+    background-image: url("../../../images/chart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.report__chart-verticals {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 4px;
+    gap: 60px;
+    background-image: linear-gradient(to right, #000000, #00000000);
+}
+
+.report__chart-vertical {
+    font-size: 1rem;
+    font-weight: 200;
+    color: var(--text-primary);
+}
+
+.report__diagrams {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-width: 45%;
+}
+
+.report__diagram {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.report__diagram-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.report__diagram-block {
+    padding: 24px 12px 12px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    background-color: var(--background-inactive);
+    border: 2px solid var(--border-primary);
+}
+
+.report__diagram-position:nth-child(1) {
+    height: 50%;
+}
+
+.report__diagram-position:nth-child(2) {
+    height: 5%;
+}
+
+.report__diagram-position:nth-child(3) {
+    height: 12.5%;
+}
+
+.report__diagram-position:nth-child(4) {
+    height: 25%;
+}
+
+.report__diagram-position:nth-child(5) {
+    height: 7.5%;
+}
+
+.report__diagram-position {
+    position: relative;
+    width: 100px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30px;
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff00);
+}
+
+.report__diagram-origin {
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: 200;
+    color: var(--text-primary);
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.report__diagram-value {
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-on-white);
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+:root {
+    --header-background: #1A1A1A;
+    --footer-background: #1A1A1A;
+    --font: 'Unbounded', sans-serif;
+
+    --text-primary: #FFFFFF;
+    --text-on-white: #000000;
+
+    --border-primary: #525252;
+    --border-hover: #555555;
+    --border-active: #7E7E7E;
+
+    --background-inactive: #151515;
+    --background-inactive-hover: #202020;
+    --background-inactive-active: #101010;
+
+    --background-primary: #202020;
+    --background-secondary: #252525;
+    --background-hover: #333333;
+    --background-active: #444444;
+
+    --shadow-primary: #161616;
+}

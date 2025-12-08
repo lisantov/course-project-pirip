@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>AFin - Ваш личный учёт финансов</title>
+    <link rel="stylesheet" href="static/styles/fonts.css">
+    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="stylesheet" href="static/styles/blocks/calendar-page.css">
+</head>
+<body>
+<header class="header">
+    <a class="header__logo" href="index.html">
+        <img class="header__logo-icon" src="static/icons/logo.svg" alt="Логотип компнаии">
+    </a>
+    <nav class="header__nav">
+        <a class="header__nav-link" href="index.html">Главная</a>
+        <a class="header__nav-link header__nav-link--active" href="#">Календарь</a>
+        <a class="header__nav-link" href="report.html">Отчёты</a>
+        <a class="header__nav-link" href="#">Настройки</a>
+    </nav>
+    <div class="header__user">
+        <a class="header__nav-link" href="#">Профиль</a>
+        <a class="header__nav-link" href="#">Выход</a>
+    </div>
+</header>
+<main class="main">
+    <section class="calendar">
+        <div class="calendar__header">
+            <h1 class="calendar__title">Календарь</h1>
+            <div class="calendar__separator"></div>
+        </div>
+        <div class="calendar__content">
+            <div class="calendar__summary">
+                <div class="calendar__summary-header">
+                    <h2 class="calendar__summary-title">Сводка</h2>
+                    <ul class="calendar__summary-list">
+                        <li class="calendar__summary-item">
+                            <p class="calendar__summary-name">Общее:</p>
+                            <p class="calendar__summary-sum">+12 700</p>
+                        </li>
+                        <li class="calendar__summary-item">
+                            <p class="calendar__summary-name">Расходы:</p>
+                            <p class="calendar__summary-sum">-4 300</p>
+                        </li>
+                        <li class="calendar__summary-item">
+                            <p class="calendar__summary-name">Доходы:</p>
+                            <p class="calendar__summary-sum">+17 000</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="calendar__summary-popular">
+                    <p class="calendar__summary-prefix">Самая популярная категория:</p>
+                    <p class="calendar__summary-result">Кафе и рестораны</p>
+                </div>
+            </div>
+            <div class="calendar__board">
+                <div class="calendar__controls">
+                    <button class="calendar__controls-button">
+                        <img src="static/icons/arrow_left.svg" alt="Стрелочка влево">
+                    </button>
+                    <p class="calendar__controls-current">Октябрь 2025</p>
+                    <button class="calendar__controls-button">
+                        <img src="static/icons/arrow_right.svg" alt="Стрелочка вправо">
+                    </button>
+                </div>
+                <div class="calendar__grid-container">
+                    <ul class="calendar__grid-days">
+                        <li class="calendar__grid-day">Пн</li>
+                        <li class="calendar__grid-day">Вт</li>
+                        <li class="calendar__grid-day">Ср</li>
+                        <li class="calendar__grid-day">Чт</li>
+                        <li class="calendar__grid-day">Пт</li>
+                        <li class="calendar__grid-day">Сб</li>
+                        <li class="calendar__grid-day">Вс</li>
+                    </ul>
+                    <ul class="calendar__grid-cells">
+                        <li class="calendar__grid-cell">1</li>
+                        <li class="calendar__grid-cell">2</li>
+                        <li class="calendar__grid-cell">3</li>
+                        <li class="calendar__grid-cell">4</li>
+                        <li class="calendar__grid-cell">5</li>
+                        <li class="calendar__grid-cell">6</li>
+                        <li class="calendar__grid-cell">7</li>
+                        <li class="calendar__grid-cell">8</li>
+                        <li class="calendar__grid-cell">9</li>
+                        <li class="calendar__grid-cell">10</li>
+                        <li class="calendar__grid-cell">11</li>
+                        <li class="calendar__grid-cell">12</li>
+                        <li class="calendar__grid-cell">13</li>
+                        <li class="calendar__grid-cell">14</li>
+                        <li class="calendar__grid-cell">15</li>
+                        <li class="calendar__grid-cell">16</li>
+                        <li class="calendar__grid-cell">17</li>
+                        <li class="calendar__grid-cell">18</li>
+                        <li class="calendar__grid-cell">19</li>
+                        <li class="calendar__grid-cell">20</li>
+                        <li class="calendar__grid-cell">21</li>
+                        <li class="calendar__grid-cell">22</li>
+                        <li class="calendar__grid-cell">23</li>
+                        <li class="calendar__grid-cell">24</li>
+                        <li class="calendar__grid-cell">25</li>
+                        <li class="calendar__grid-cell">26</li>
+                        <li class="calendar__grid-cell">27</li>
+                        <li class="calendar__grid-cell">28</li>
+                        <li class="calendar__grid-cell">29</li>
+                        <li class="calendar__grid-cell">30</li>
+                        <li class="calendar__grid-cell">31</li>
+                        <li class="calendar__grid-cell calendar__grid-cell--inactive">32</li>
+                        <li class="calendar__grid-cell calendar__grid-cell--inactive">33</li>
+                        <li class="calendar__grid-cell calendar__grid-cell--inactive">34</li>
+                        <li class="calendar__grid-cell calendar__grid-cell--inactive">35</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__logo">
+        <img src="static/icons/logo.svg" alt="Иконка AFin">
+        <span class="footer__logo-company">&copy;AFinance 2025</span>
+    </div>
+    <nav class="footer__nav">
+        <a class="footer__nav-link" href="">FAQ</a>
+        <a class="footer__nav-link" href="">Политика конфиденциальности</a>
+        <a class="footer__nav-link" href="">Пользовательское соглашение</a>
+        <a class="footer__nav-link" href="">О проекте</a>
+        <a class="footer__nav-link" href="">Наша команда</a>
+        <a class="footer__nav-link" href="">Для спонсоров</a>
+    </nav>
+    <div class="footer__socials">
+        <a class="footer__socials-link" href="">
+            <img src="static/icons/telegram.svg" alt="Иконка телеграмма">
+        </a>
+        <a class="footer__socials-link" href="">
+            <img src="static/icons/max.svg" alt="Иконка мессенджера макс">
+        </a>
+        <a class="footer__socials-link" href="">
+            <img src="static/icons/vk.svg" alt="Иконка вконтакте">
+        </a>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>AFin - Ваш личный учёт финансов</title>
+    <link rel="stylesheet" href="static/styles/fonts.css">
+    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="stylesheet" href="static/styles/blocks/main-page.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="index.html">
+            <img class="header__logo-icon" src="static/icons/logo.svg" alt="Логотип компнаии">
+        </a>
+        <nav class="header__nav">
+            <a class="header__nav-link header__nav-link--active" href="#">Главная</a>
+            <a class="header__nav-link" href="calendar.html">Календарь</a>
+            <a class="header__nav-link" href="report.html">Отчёты</a>
+            <a class="header__nav-link" href="#">Настройки</a>
+        </nav>
+        <div class="header__user">
+            <a class="header__nav-link" href="#">Профиль</a>
+            <a class="header__nav-link" href="#">Выход</a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="info">
+            <div class="info__header">
+                <h1 class="info__title">Главная</h1>
+                <div class="info__separator"></div>
+            </div>
+            <div class="info__content">
+                <div class="info__balance">
+                    <div class="info__balance-header">
+                        <p class="info__balance-title">
+                            <span class="info__balance-title--bold">123 456</span> RUB
+                        </p>
+                    </div>
+                    <p class="info__balance-operations">Операций за сегодня: 7</p>
+                </div>
+                <div class="info__actions">
+                    <div class="info__actions-buttons">
+                        <button class="info__actions-button">Добавить операцию</button>
+                        <button class="info__actions-button">Спланировать будущее</button>
+                    </div>
+                    <div class="info__actions-indicators">
+                        <div class="info__actions-indicator">
+                            <p>Финансовое благополучие</p>
+                            <p><span class="info__actions-indicator--bold">70</span>%</p>
+                            <a href="" class="info__actions-indicator--link">Подробнее</a>
+                        </div>
+                        <div class="info__actions-indicator">
+                            <p>Расходование бюджета</p>
+                            <p><span class="info__actions-indicator--bold">15</span>%</p>
+                            <a href="" class="info__actions-indicator--link">Подробнее</a>
+                        </div>
+                        <div class="info__actions-indicator">
+                            <p>Равновесие бюджета</p>
+                            <p><span class="info__actions-indicator--bold">83</span>%</p>
+                            <a href="" class="info__actions-indicator--link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary">
+            <div class="summary__header">
+                <h1 class="summary__title">Сводка</h1>
+                <div class="summary__separator"></div>
+                <label>
+                    <select class="summary__header-period" name="period" id="period">
+                        <option class="summary__header-option" value="за месяц">за месяц</option>
+                        <option class="summary__header-option" value="за месяц">за 3 месяца</option>
+                        <option class="summary__header-option" value="за месяц">за полгода</option>
+                        <option class="summary__header-option" value="за месяц">за год</option>
+                    </select>
+                </label>
+            </div>
+            <div class="summary__content">
+                <div class="summary__goals">
+                    <div class="summary__goal">
+                        <div class="summary__goal-header">
+                            <h3 class="summary__goal-title">Хочу миллион!</h3>
+                            <span class="summary__goal-type">Сводка по цели</span>
+                        </div>
+                        <p class="summary__goal-progress">+120 000 RUB (12%)</p>
+                        <p class="summary__goal-status">
+                            <span class="summary__goal-status--current">
+                                123 456
+                            </span>
+                            \
+                            <span class="summary__goal-status--target">1 000 000</span>
+                        </p>
+                    </div>
+                    <div class="summary__goal">
+                        <div class="summary__goal-header">
+                            <h3 class="summary__goal-title">Ну или сотку</h3>
+                            <span class="summary__goal-type">Сводка по цели</span>
+                        </div>
+                        <p class="summary__goal-progress">+120 000 RUB (120%)</p>
+                        <p class="summary__goal-status">
+                            <span class="summary__goal-status--current">
+                                123 456
+                            </span>
+                            \
+                            <span class="summary__goal-status--target">100 000</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="rating__controls">
+                        <label class="rating__controls-label rating__controls-label--active">
+                            Доходы
+                            <input class="rating__controls-input" checked type="radio" value="Доходы" name="operation-type">
+                        </label>
+                        <label class="rating__controls-label rating__controls-label--active">
+                            Расходы
+                            <input class="rating__controls-input" type="radio" value="Расходы" name="operation-type">
+                        </label>
+                        <label class="rating__controls-label rating__controls-label--active">
+                            Операции
+                            <input class="rating__controls-input" type="radio" value="Операции" name="operation-type">
+                        </label>
+                    </div>
+                    <div class="rating__separator"></div>
+                    <ul class="rating__list">
+                        <li class="rating__item">
+                            <div class="rating__item-title">
+                                <h3 class="rating__item-name">Зарплата</h3>
+                                <p class="rating__item-count">1 поступление</p>
+                            </div>
+                            <p class="rating__item-amount">
+                                <span class="rating__item-amount--bold">100 000</span> RUB
+                            </p>
+                        </li>
+                        <li class="rating__item">
+                            <div class="rating__item-title">
+                                <h3 class="rating__item-name">Переводы</h3>
+                                <p class="rating__item-count">7 поступлений</p>
+                            </div>
+                            <p class="rating__item-amount">
+                                <span class="rating__item-amount--bold">15 000</span> RUB
+                            </p>
+                        </li>
+                        <li class="rating__item">
+                            <div class="rating__item-title">
+                                <h3 class="rating__item-name">Вклад</h3>
+                                <p class="rating__item-count">1 поступление</p>
+                            </div>
+                            <p class="rating__item-amount">
+                                <span class="rating__item-amount--bold">2 000</span> RUB
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="static/icons/logo.svg" alt="Иконка AFin">
+            <span class="footer__logo-company">&copy;AFinance 2025</span>
+        </div>
+        <nav class="footer__nav">
+            <a class="footer__nav-link" href="">FAQ</a>
+            <a class="footer__nav-link" href="">Политика конфиденциальности</a>
+            <a class="footer__nav-link" href="">Пользовательское соглашение</a>
+            <a class="footer__nav-link" href="">О проекте</a>
+            <a class="footer__nav-link" href="">Наша команда</a>
+            <a class="footer__nav-link" href="">Для спонсоров</a>
+        </nav>
+        <div class="footer__socials">
+            <a class="footer__socials-link" href="">
+                <img src="static/icons/telegram.svg" alt="Иконка телеграмма">
+            </a>
+            <a class="footer__socials-link" href="">
+                <img src="static/icons/max.svg" alt="Иконка мессенджера макс">
+            </a>
+            <a class="footer__socials-link" href="">
+                <img src="static/icons/vk.svg" alt="Иконка вконтакте">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
