@@ -23,21 +23,130 @@
     <a class="header__nav-link" href="#">Выход</a>
   </div>
 </header>
-<main class="main">
-  <section class="hero">
-    <div class="hero__content">
-      <div class="hero__header">
-        <h2 class="hero__title">Держите деньги <span class="hero__title--bold">под контрлем</span></h2>
-        <p class="hero__description">Отслеживайте ваши доходы и расходы. Изучайте отчёты с аналитикой ваших финансов и будьте в курсе всех статистик</p>
-      </div>
-      <a href="login.html" class="hero__button">
-        Начать
-        <img src="static/icons/follow.svg" alt="Иконка стрелочки" class="hero__button-icon">
-      </a>
+<section class="hero">
+  <div class="hero__content">
+    <div class="hero__header">
+      <h2 class="hero__title">Держите деньги <span class="hero__title--bold">под контролем</span></h2>
+      <p class="hero__description">Отслеживайте ваши доходы и расходы. Изучайте отчёты с аналитикой ваших финансов и будьте в курсе всех статистик</p>
     </div>
-    <p class="hero__slogan"><span class="hero__slogan--bold">AFin</span> - финансовый дневник для личного пользования</p>
+    <a href="login.html" class="hero__button">
+      Начать
+      <img src="static/icons/follow.svg" alt="Иконка стрелочки" class="hero__button-icon">
+    </a>
+  </div>
+  <p class="hero__slogan"><span class="hero__slogan--bold">AFin</span> - финансовый дневник для личного пользования</p>
+</section>
+<main class="main">
+  <section class="groups">
+    <h3 class="groups__title">Для кого подойдёт?</h3>
+    <ul class="groups__grid">
+      <li class="groups__item">
+        <h4 class="groups__item-title">Семьям</h4>
+        <p class="groups__item-description">Приближайтесь к финансовой гармонии и благополучию</p>
+      </li>
+      <li class="groups__item">
+        <h4 class="groups__item-title">Себе</h4>
+        <p class="groups__item-description">Стремитесь к своим мечтам будучи уверенными в своих финансовых силах</p>
+      </li>
+      <li class="groups__item">
+        <h4 class="groups__item-title">Самозанятым</h4>
+        <p class="groups__item-description">С лёгкостью отслеживайте все финансовые операции и составляйте отчёты</p>
+      </li>
+    </ul>
+  </section>
+  <section class="abilities">
+    <h3 class="abilities__title">Возможности на все потребности</h3>
+    <ul class="abilities__grid">
+      <li class="abilities__item">
+        <h4 class="abilities__item-title">Расчёт</h4>
+        <p class="abilities__item-description">Алгоритмический расчёт эффективного использования финансов</p>
+      </li>
+      <li class="abilities__item">
+        <h4 class="abilities__item-title">Отчёты</h4>
+        <p class="abilities__item-description">Финансовые отчёты по итогам выбранного периода</p>
+      </li>
+      <li class="abilities__item">
+        <h4 class="abilities__item-title">Графики</h4>
+        <p class="abilities__item-description">Графическая визуализация вашего финансового состояния для упрощения восприятия</p>
+      </li>
+      <li class="abilities__item">
+        <h4 class="abilities__item-title">Планирование</h4>
+        <p class="abilities__item-description">Плавнирование целей и операций в календаре позволяет удобно расписывать будущее бюджета</p>
+      </li>
+    </ul>
+  </section>
+  <section class="tariffs">
+    <h3 class="tariffs__title">Тарифы</h3>
+    <ul class="tariffs__grid">
+      <li class="tariffs__item">
+        <div class="tariffs__item-header">
+          <span class="tariffs__item-price">бесплатно</span>
+          <h4 class="tariffs__item-title">Базовый</h4>
+          <ul class="tariffs__item-advantages">
+            <li class="tariffs__item-advantage">Сводка за месяц</li>
+            <li class="tariffs__item-advantage">Хранение данных в течении 3 месяцев</li>
+            <li class="tariffs__item-advantage">Доступ к базовому функционалу</li>
+            <li class="tariffs__item-advantage">Установка целей на сбор</li>
+            <li class="tariffs__item-advantage">Добавление операций</li>
+          </ul>
+        </div>
+        <button class="tariffs__item-button">Подробнее</button>
+      </li>
+      <li class="tariffs__item">
+        <div class="tariffs__item-header">
+          <span class="tariffs__item-price">200руб./месяц</span>
+          <h4 class="tariffs__item-title">Эконом</h4>
+          <ul class="tariffs__item-advantages">
+            <li class="tariffs__item-advantage">Сводка за любой период</li>
+            <li class="tariffs__item-advantage">Хранение данных в течении года</li>
+            <li class="tariffs__item-advantage">Планирование операций в календаре</li>
+            <li class="tariffs__item-advantage">Сводка за любой период</li>
+            <li class="tariffs__item-advantage">Пункты тарифа Базовый</li>
+          </ul>
+        </div>
+        <button class="tariffs__item-button">Подробнее</button>
+      </li>
+      <li class="tariffs__item">
+        <div class="tariffs__item-header">
+          <span class="tariffs__item-price">350руб./месяц</span>
+          <h4 class="tariffs__item-title">Премиум</h4>
+          <ul class="tariffs__item-advantages">
+            <li class="tariffs__item-advantage">Хранение данных в течении 5 лет</li>
+            <li class="tariffs__item-advantage">Подробные графики операций в сводках</li>
+            <li class="tariffs__item-advantage">Неограниченное количество целей</li>
+            <li class="tariffs__item-advantage">Пункты тарифа Эконом</li>
+          </ul>
+        </div>
+        <button class="tariffs__item-button">Подробнее</button>
+      </li>
+    </ul>
   </section>
 </main>
+<section class="feedback">
+  <div class="feedback__header">
+    <h3 class="feedback__title">Задайте волнующие вопросы</h3>
+    <p class="feedback__description">Оставьте почту и мы свяжемся</p>
+  </div>
+  <form class="feedback__form">
+    <div class="feedback__fields">
+      <div class="feedback__fields-person">
+        <label class="feedback__fields-label">
+          E-mail
+          <input type="email" class="feedback__fields-input">
+        </label>
+        <label class="feedback__fields-label">
+          Ваше имя
+          <input type="text" class="feedback__fields-input">
+        </label>
+      </div>
+      <label class="feedback__fields-label">
+        Что вас интересеут?
+        <textarea class="feedback__fields-textarea"></textarea>
+      </label>
+    </div>
+    <button class="feedback__form-button">Отправить</button>
+  </form>
+</section>
 <footer class="footer">
   <div class="footer__logo">
     <img src="static/icons/logo.svg" alt="Иконка AFin">

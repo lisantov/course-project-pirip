@@ -1,0 +1,59 @@
+.abilities {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.abilities__title {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.abilities__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.abilities__item {
+    padding: 38px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: 105%;
+    background-repeat: no-repeat;
+    height: 300px;
+    box-shadow: 0 4px 4px #0000004D;
+}
+
+.abilities__item:nth-child(1) {
+    background-image: url("../../../images/ability1.png");
+}
+
+.abilities__item:nth-child(2) {
+    background-image: url("../../../images/ability2.png");
+}
+
+.abilities__item:nth-child(3) {
+    background-image: url("../../../images/ability3.png");
+}
+
+.abilities__item:nth-child(4) {
+    background-image: url("../../../images/ability4.png");
+}
+
+.abilities__item-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.abilities__item-description {
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--text-primary);
+}

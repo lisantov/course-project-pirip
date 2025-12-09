@@ -1,0 +1,85 @@
+.tariffs {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tariffs__title {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.tariffs__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.tariffs__item {
+    padding: 40px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--background-primary);
+    min-height: 395px;
+    height: 80vh;
+    max-height: 720px;
+    box-shadow: 0 4px 4px #0000004D;
+}
+
+.tariffs__item-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tariffs__item-price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: var(--text-primary);
+}
+
+.tariffs__item-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.tariffs__item-advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.tariffs__item-advantage {
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--text-primary);
+}
+
+.tariffs__item-button {
+    border: none;
+    border-radius: 25px;
+    padding: 16px;
+    background-color: var(--button-background);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.tariffs__item-button:hover {
+    background-color: var(--button-background-hover);
+}
+.tariffs__item-button:active {
+    background-color: var(--button-background-active);
+}
