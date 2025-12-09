@@ -1,0 +1,85 @@
+.main {
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 80px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../../../images/landing.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.hero__header {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.hero__title {
+    font-size: 6rem;
+    font-weight: 200;
+    max-width: 920px;
+    color: var(--text-primary);
+}
+
+.hero__title--bold {
+    font-weight: 600;
+}
+
+.hero__description {
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--text-primary);
+}
+
+.hero__button {
+    width: 100%;
+    max-width: 415px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-primary);
+    background-color: var(--background-secondary);
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+
+.hero__button:hover {
+    background-color: var(--button-background-hover);
+}
+
+.hero__button:active {
+    background-color: var(--button-background-active);
+}
+
+.hero__button-icon {
+    width: 45px;
+    aspect-ratio: 1;
+}
+
+.hero__slogan {
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--text-primary);
+}
+
+.hero__slogan--bold {
+    font-weight: 600;
+}

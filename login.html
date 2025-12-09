@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>AFin - Ваш личный учёт финансов</title>
+    <title>Вход в аккаунт - AFin</title>
     <link rel="stylesheet" href="static/styles/fonts.css">
     <link rel="stylesheet" href="static/styles/index.css">
     <link rel="stylesheet" href="static/styles/blocks/login-page.css">
@@ -11,6 +11,26 @@
 <main class="main">
     <section class="login">
         <div class="login__cover"></div>
+        <form class="login__form">
+            <h1 class="login__title">Вход в аккаунт</h1>
+            <div class="login__fields-container">
+                <div class="login__fields">
+                    <label class="login__field">
+                        E-mail
+                        <input type="email" class="login__input">
+                    </label>
+                    <label class="login__field">
+                        Пароль
+                        <input type="password" class="login__input">
+                    </label>
+                </div>
+                <div class="login__actions">
+                    <a class="login__link" href="#">Забыли пароль?</a>
+                    <a class="login__link" href="register.html">Зарегистрироваться</a>
+                </div>
+            </div>
+            <button class="login__button">Войти</button>
+        </form>
     </section>
 </main>
 </body>

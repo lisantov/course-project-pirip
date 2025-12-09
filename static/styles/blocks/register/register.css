@@ -1,4 +1,4 @@
-.login {
+.register {
     display: grid;
     grid-template-columns: 3fr 4fr;
     width: 100%;
@@ -11,7 +11,7 @@
     align-self: center;
 }
 
-.login__cover {
+.register__cover {
     width: 100%;
     height: 83vh;
     border-radius: 14px;
@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
 }
 
-.login__form {
+.register__form {
     padding: 70px;
     display: flex;
     flex-direction: column;
@@ -29,25 +29,25 @@
     gap: 40px;
 }
 
-.login__title {
+.register__title {
     font-size: 3rem;
     font-weight: 600;
     color: var(--text-primary);
 }
 
-.login__fields-container {
+.register__fields-container {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.login__fields {
+.register__fields {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.login__field {
+.register__field {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -55,7 +55,7 @@
     color: var(--text-primary);
 }
 
-.login__input {
+.register__input {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -68,20 +68,20 @@
     transition: 0.25s ease-in-out;
 }
 
-.login__input:hover {
+.register__input:hover {
     background-color: var(--background-hover);
 }
 
-.login__input:active {
+.register__input:active {
     background-color: var(--background-inactive-active);
 }
 
-.login__actions {
+.register__actions {
     display: flex;
     justify-content: space-between;
 }
 
-.login__link {
+.register__link {
     position: relative;
     font-size: 1.25rem;
     font-weight: 200;
@@ -90,7 +90,7 @@
     transition: 0.25s ease-in-out;
 }
 
-.login__link::before {
+.register__link::before {
     content: "";
     position: absolute;
     width: 0;
@@ -101,15 +101,15 @@
     transition: 0.25s ease-in-out;
 }
 
-.login__link:hover::before {
+.register__link:hover::before {
     width: 100%;
 }
 
-.login__link:active {
+.register__link:active {
     opacity: 0.7;
 }
 
-.login__button {
+.register__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,10 +124,10 @@
     transition: 0.25s ease-in-out;
 }
 
-.login__button:hover {
+.register__button:hover {
     background-color: var(--button-background-hover);
 }
 
-.login__button:active{
+.register__button:active{
     background-color: var(--button-background-active);
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница не найдена</title>
+    <link rel="stylesheet" href="static/styles/fonts.css">
+    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="stylesheet" href="static/styles/blocks/error-page.css">
+</head>
+<body>
+<header class="header">
+    <h1><a class="header__logo" href="index.html">
+        <img class="header__logo-icon" src="static/icons/logo.svg" alt="Логотип компнаии">
+    </a></h1>
+    <nav class="header__nav">
+        <a class="header__nav-link header__nav-link--active" href="#">Главная</a>
+        <a class="header__nav-link" href="calendar.html">Календарь</a>
+        <a class="header__nav-link" href="report.html">Отчёты</a>
+        <a class="header__nav-link" href="settings.html">Настройки</a>
+    </nav>
+    <div class="header__user">
+        <a class="header__nav-link" href="#">Профиль</a>
+        <a class="header__nav-link" href="#">Выход</a>
+    </div>
+</header>
+<main class="main">
+    <section class="error">
+        <div class="error__container">
+            <h2 class="error__title">403</h2>
+            <p class="error__description">У вас нету доступа к этой странице</p>
+        </div>
+        <a class="error__link" href="index.html">На главную</a>
+    </section>
+</main>
+</body>
+</html>
