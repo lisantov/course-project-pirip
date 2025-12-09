@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отчёт - AFin</title>
     <link rel="stylesheet" href="static/styles/fonts.css">
     <link rel="stylesheet" href="static/styles/index.css">
@@ -22,6 +23,9 @@
         <a class="header__nav-link" href="#">Профиль</a>
         <a class="header__nav-link" href="#">Выход</a>
     </div>
+    <button class="header__sidebar-button">
+        <img class="header__sidebar-icon" src="static/icons/sidebar.svg" alt="Иконка сайдбара">
+    </button>
 </header>
 <main class="main">
     <section class="report">
@@ -110,6 +114,54 @@
                             </div>
                         </div>
                     </div>
+                    <div class="report__roadmap-chart--mobile">
+                        <div class="report__roadmap-block">
+                            <div class="report__roadmap-point"></div>
+                            <div class="report__roadmap-point"></div>
+                            <div class="report__roadmap-point"></div>
+                            <div class="report__roadmap-point"></div>
+                            <div class="report__roadmap-point"></div>
+                            <div class="report__roadmap-point"></div>
+                        </div>
+                        <div class="report__roadmap-grid">
+                            <div class="report__roadmap-edge report__roadmap-edge--left">
+                                <span class="report__roadmap-balance">
+                                    100 000,0
+                                </span>
+                                <p class="report__roadmap-text">начало периода</p>
+                            </div>
+                            <div class="report__roadmap-edge">
+                                <span class="report__roadmap-balance">
+                                    26 670,0
+                                </span>
+                                <p class="report__roadmap-text">поступления</p>
+                            </div>
+                            <div class="report__roadmap-edge">
+                                <span class="report__roadmap-balance">
+                                    13 500,0
+                                </span>
+                                <p class="report__roadmap-text">выводы</p>
+                            </div>
+                            <div class="report__roadmap-edge">
+                                <span class="report__roadmap-balance">
+                                    2 500,0
+                                </span>
+                                <p class="report__roadmap-text">дивиденды</p>
+                            </div>
+                            <div class="report__roadmap-edge">
+                                <span class="report__roadmap-balance">
+                                    0,0
+                                </span>
+                                <p class="report__roadmap-text">налоги</p>
+                            </div>
+                            <div class="report__roadmap-edge report__roadmap-edge--right">
+                                <span class="report__roadmap-balance">
+                                    115 670,0
+                                </span>
+                                <p class="report__roadmap-text">конец периода</p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
                 <article class="report__chart">
                     <h2 class="report__chart-title">График финансов</h2>
@@ -185,12 +237,16 @@
         <span class="footer__logo-company">&copy;AFinance 2025</span>
     </div>
     <nav class="footer__nav">
-        <a class="footer__nav-link" href="">FAQ</a>
-        <a class="footer__nav-link" href="">Политика конфиденциальности</a>
-        <a class="footer__nav-link" href="">Пользовательское соглашение</a>
-        <a class="footer__nav-link" href="">О проекте</a>
-        <a class="footer__nav-link" href="">Наша команда</a>
-        <a class="footer__nav-link" href="">Для спонсоров</a>
+        <div class="footer__nav-container">
+            <a class="footer__nav-link" href="">FAQ</a>
+            <a class="footer__nav-link" href="">Политика конфиденциальности</a>
+            <a class="footer__nav-link" href="">Пользовательское соглашение</a>
+        </div>
+        <div class="footer__nav-container">
+            <a class="footer__nav-link" href="">О проекте</a>
+            <a class="footer__nav-link" href="">Наша команда</a>
+            <a class="footer__nav-link" href="">Для спонсоров</a>
+        </div>
     </nav>
     <div class="footer__socials">
         <a class="footer__socials-link" href="">

@@ -8,6 +8,7 @@
 }
 
 .header__logo {
+    display: block;
     width: 8rem;
     transition: 0.25s ease-in-out;
 }
@@ -68,4 +69,32 @@
 
 .header__nav-link--active::before {
     width: 100%;
+}
+
+.header__sidebar-button {
+    display: none;
+    width: 4rem;
+    background-color: transparent;
+    border: none;
+}
+
+.header__sidebar-icon {
+    width: 100%;
+}
+
+@media (max-width: 1500px) {
+    .header {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header__nav,
+    .header__user {
+        display: none;
+    }
+
+    .header__sidebar-button {
+        display: block;
+    }
 }

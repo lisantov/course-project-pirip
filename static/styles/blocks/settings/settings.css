@@ -67,6 +67,7 @@
 }
 
 .settings__option-input {
+
     padding: 10px;
     font-size: 1.5rem;
     font-weight: 200;
@@ -75,7 +76,8 @@
     border: 1px solid var(--border-primary);
     background-color: var(--background-primary);
     cursor: pointer;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     transition: 0.25s ease-in-out;
 }
 
@@ -127,4 +129,29 @@ input.settings__option-input {
 
 .settings__button:active {
     background-color: var(--button-background-active);
+}
+
+@media (max-width: 1400px) {
+    .settings__option-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .settings__button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .settings__option-label {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .settings__option-input {
+        max-width: none;
+    }
+
+    .settings__buttons {
+        grid-template-columns: 1fr;
+    }
 }

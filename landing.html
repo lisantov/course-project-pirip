@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AFin - Ваш личный учёт финансов</title>
   <link rel="stylesheet" href="static/styles/fonts.css">
   <link rel="stylesheet" href="static/styles/index.css">
@@ -22,6 +23,9 @@
     <a class="header__nav-link" href="#">Профиль</a>
     <a class="header__nav-link" href="#">Выход</a>
   </div>
+  <button class="header__sidebar-button">
+    <img class="header__sidebar-icon" src="static/icons/sidebar.svg" alt="Иконка сайдбара">
+  </button>
 </header>
 <section class="hero">
   <div class="hero__content">
@@ -153,12 +157,16 @@
     <span class="footer__logo-company">&copy;AFinance 2025</span>
   </div>
   <nav class="footer__nav">
-    <a class="footer__nav-link" href="">FAQ</a>
-    <a class="footer__nav-link" href="">Политика конфиденциальности</a>
-    <a class="footer__nav-link" href="">Пользовательское соглашение</a>
-    <a class="footer__nav-link" href="">О проекте</a>
-    <a class="footer__nav-link" href="">Наша команда</a>
-    <a class="footer__nav-link" href="">Для спонсоров</a>
+    <div class="footer__nav-container">
+      <a class="footer__nav-link" href="">FAQ</a>
+      <a class="footer__nav-link" href="">Политика конфиденциальности</a>
+      <a class="footer__nav-link" href="">Пользовательское соглашение</a>
+    </div>
+    <div class="footer__nav-container">
+      <a class="footer__nav-link" href="">О проекте</a>
+      <a class="footer__nav-link" href="">Наша команда</a>
+      <a class="footer__nav-link" href="">Для спонсоров</a>
+    </div>
   </nav>
   <div class="footer__socials">
     <a class="footer__socials-link" href="">

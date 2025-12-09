@@ -1,4 +1,5 @@
 .login {
+    position: relative;
     display: grid;
     grid-template-columns: 3fr 4fr;
     width: 100%;
@@ -13,7 +14,7 @@
 
 .login__cover {
     width: 100%;
-    height: 83vh;
+    min-height: 83vh;
     border-radius: 14px;
     background-image: url("../../../images/login-cover.png");
     background-size: cover;
@@ -130,4 +131,47 @@
 
 .login__button:active{
     background-color: var(--button-background-active);
+}
+
+@media (max-width: 1000px) {
+    .main {
+        padding: 0;
+        height: 100vh;
+    }
+
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+        max-height: none;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    .login__cover {
+        position: absolute;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 0;
+        z-index: -1;
+    }
+
+    .login__form {
+        padding: 0;
+    }
+
+    .login__title {
+        text-align: center;
+    }
+
+    .login__input {
+        padding: 8px;
+        min-width: 335px;
+    }
+
+    .login__button {
+        padding: 8px;
+    }
 }
