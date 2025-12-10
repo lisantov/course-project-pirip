@@ -204,3 +204,62 @@
 .rating__item-amount--bold {
     font-weight: 600;
 }
+
+@media (max-width: 1200px) {
+    .summary__content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .summary__goals {
+        gap: 10px;
+    }
+
+    .summary__goal {
+        padding: 10px;
+        gap: 10px;
+        border-radius: 15px;
+    }
+
+    .rating__controls {
+        gap: 10px;
+    }
+
+    .rating__controls-label {
+        padding: 12px 24px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .summary__header {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .summary__separator {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .summary {
+        gap: 20px;
+    }
+
+    .rating__controls {
+        grid-template-columns: 1fr;
+    }
+
+    .rating__list {
+        gap: 10px;
+    }
+
+    .rating__item {
+        padding: 15px 20px;
+    }
+
+    .rating__item-amount {
+        max-width: 100px;
+        text-align: right;
+    }
+}

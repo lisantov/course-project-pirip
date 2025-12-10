@@ -400,6 +400,16 @@
 }
 
 @media (max-width: 600px) {
+    .report__header {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .report__separator {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
     .report__income {
         flex-direction: column;
         gap: 20px;

@@ -143,6 +143,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
@@ -206,4 +207,80 @@
 
 .calendar__grid-cell--inactive:active {
     background-color: var(--background-inactive-active);
+}
+
+@media (max-width: 1500px) {
+    .calendar__board {
+        max-width: 600px;
+    }
+
+    .calendar__grid-cells {
+        gap: 10px;
+    }
+
+    .calendar__grid-cell {
+        border-radius: 15px;
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .calendar__content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 40px;
+    }
+
+    .calendar__summary {
+        max-width: none;
+    }
+
+    .calendar__board {
+        max-width: none;
+    }
+
+    .calendar__grid-days {
+        max-width: 600px;
+    }
+
+    .calendar__grid-cells {
+        max-width: 600px;
+    }
+
+    .calendar__controls {
+        gap: 40px;
+    }
+
+    .calendar__controls-button {
+        width: 14px;
+    }
+
+    .calendar__controls-button > img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .calendar__header {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .calendar__separator {
+        margin-top: 0;
+    }
+
+    .calendar__summary-header {
+        gap: 20px;
+    }
+
+    .calendar__controls-current {
+        max-width: 160px;
+        text-align: center;
+    }
+
+    .calendar__grid-cell {
+        border-radius: 10px;
+        padding: 6px;
+    }
 }

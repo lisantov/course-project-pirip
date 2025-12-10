@@ -23,11 +23,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-size: 105%;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 260px;
     height: 80vh;
-    max-height: 720px;
+    max-height: 640px;
     box-shadow: 0 4px 4px #0000004D;
 }
 
@@ -58,4 +58,18 @@
     font-size: 2rem;
     font-weight: 200;
     color: var(--text-primary);
+}
+
+@media (max-width: 1500px) {
+    .groups__grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .groups__item {
+        padding: 20px;
+        height: auto;
+    }
 }

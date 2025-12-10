@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 80px 80px 40px;
     display: flex;
     flex-direction: column;
@@ -37,6 +37,7 @@
 .hero__description {
     font-size: 2rem;
     font-weight: 200;
+    max-width: 900px;
     color: var(--text-primary);
 }
 
@@ -45,6 +46,7 @@
     max-width: 415px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 30px;
     border-radius: 25px;
     border: none;
@@ -78,4 +80,34 @@
 
 .hero__slogan--bold {
     font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    .hero__title {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero {
+        padding: 20px;
+    }
+
+    .hero__title {
+        font-size: 4rem;
+    }
+
+    .hero__content {
+        gap: 20px;
+    }
+
+    .hero__button {
+        max-width: 335px;
+        padding: 12px 16px;
+        border-radius: 15px;
+    }
+
+    .hero__button-icon {
+        width: 30px;
+    }
 }

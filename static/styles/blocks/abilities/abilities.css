@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-size: 105%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
     box-shadow: 0 4px 4px #0000004D;
@@ -56,4 +56,21 @@
     font-size: 2rem;
     font-weight: 200;
     color: var(--text-primary);
+}
+
+@media (max-width: 1200px) {
+    .abilities__grid {
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .abilities__item-title {
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .abilities__item {
+        padding: 20px;
+    }
 }
